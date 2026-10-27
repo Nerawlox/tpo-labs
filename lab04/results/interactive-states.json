@@ -1,0 +1,13 @@
+{
+  "method": "Interactive UI inspection of positive and negative form states",
+  "cases": [
+    {
+      "id": "D01",
+      "state": "Browser tab: 4, Title: \"Обратная связь • ЛР 4\", URL: \"http://127.0.0.1:8765/lab04/app/\".\n0 AXWebArea Обратная связь • ЛР 4, URL: 127.0.0.1:8765/lab04/app/\n\t1 container\n\t\t2 text Практикум ТПО Лабораторная работа 04 / Page Object\n\t3 container\n\t\t4 text ОСТАЁМСЯ НА СВЯЗИ\n\t\t5 heading Обратная связь, Value: 1\n\t\t\t6 text Обратная связь\n\t\t7 text Все три поля обязательны. Проверка выполняется на сервере учебного стенда.\n\t\t8 container contact-form\n\t\t\t9 text Имя\n\t\t\t10 text field (settable) Имя, Value: Иван, ID: name\n\t\t\t11 text Email\n\t\t\t12 text field (settable) Email, Value: <redacted>\n\t\t\t13 text Сообщение\n\t\t\t14 text entry area (settable) Сообщение, Value: Проверка формы по сценарию D01, ID: message\n\t\t\t15 button Отправить сообщение, ID: send\n\t\t17 text Сообщение успешно принято\n\t\t16 text Локальная демонстрация приёма формы. Письма на email не отправляются.\n\nThe focused UI element is 15 button Отправить сообщение, ID: send"
+    },
+    {
+      "id": "D03-empty-email",
+      "state": "Browser tab: 4, Title: \"Обратная связь • ЛР 4\", URL: \"http://127.0.0.1:8765/lab04/app/\".\n0 AXWebArea Обратная связь • ЛР 4, URL: 127.0.0.1:8765/lab04/app/\n\t1 container\n\t\t2 text Практикум ТПО Лабораторная работа 04 / Page Object\n\t3 container\n\t\t4 text ОСТАЁМСЯ НА СВЯЗИ\n\t\t5 heading Обратная связь, Value: 1\n\t\t\t6 text Обратная связь\n\t\t7 text Все три поля обязательны. Проверка выполняется на сервере учебного стенда.\n\t\t8 container contact-form\n\t\t\t9 text Имя\n\t\t\t10 text field (settable) Имя, Value: Иван, ID: name\n\t\t\t11 text Email\n\t\t\t12 text field (settable) Email\n\t\t\t17 text Email: обязательное поле\n\t\t\t13 text Сообщение\n\t\t\t14 text entry area (settable) Сообщение, Value: Проверка формы по сценарию D01, ID: message\n\t\t\t15 button Отправить сообщение, ID: send\n\t\t16 text Локальная демонстрация приёма формы. Письма на email не отправляются.\n\nThe focused UI element is 15 button Отправить сообщение, ID: send"
+    }
+  ]
+}

@@ -24,4 +24,8 @@ if __name__ == '__main__':
             driver.get(f'http://127.0.0.1:8765/lab08/results/{profile}-console.txt')
             driver.execute_script('document.body.style.fontSize="17px"; document.body.style.lineHeight="1.45"; window.scrollTo(0,document.body.scrollHeight)')
             screenshot(driver,'lab08',profile)
+        if (ROOT/'lab07/results/mobile-checks.json').exists():
+            driver.get('http://127.0.0.1:8765/lab07/results/appium-console.txt')
+            driver.execute_script('document.querySelector("pre").style.whiteSpace="pre-wrap"; document.body.style.fontSize="17px"; document.body.style.lineHeight="1.5"')
+            screenshot(driver,'lab07','90_appium_results')
     finally:driver.quit()

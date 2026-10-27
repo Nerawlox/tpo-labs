@@ -69,13 +69,13 @@ public class MainActivity extends Activity {
         scroll.addView(list);
         root.addView(scroll, new LinearLayout.LayoutParams(-1,0,1));
         setContentView(root);
-        add.setOnClickListener(view -> {
+        add.setOnClickListener(new View.OnClickListener() { @Override public void onClick(View view) {
             String value = input.getText().toString().trim();
             if (value.isEmpty()) {error.setText("Введите текст заметки"); return;}
             notes.add(value); input.setText(""); error.setText(""); save(); render();
             ((InputMethodManager)getSystemService(INPUT_METHOD_SERVICE)).hideSoftInputFromWindow(input.getWindowToken(),0);
             input.clearFocus();
-        });
+        }});
         render();
     }
 
@@ -91,7 +91,7 @@ public class MainActivity extends Activity {
             row.addView(title,new LinearLayout.LayoutParams(0,-2,1));
             Button remove = new Button(this); remove.setText("×"); remove.setTextSize(22);
             remove.setContentDescription("delete_note_"+i);
-            remove.setOnClickListener(view -> {notes.remove(index); save(); render();});
+            remove.setOnClickListener(new View.OnClickListener() { @Override public void onClick(View view) {notes.remove(index); save(); render();}});
             row.addView(remove,new LinearLayout.LayoutParams(dp(52),dp(48)));
             list.addView(row,rowParams);
         }

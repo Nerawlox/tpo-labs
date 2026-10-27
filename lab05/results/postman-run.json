@@ -1,11 +1,11 @@
 {
   "run": {
     "meta": {
-      "collectionId": "c1e36455-0d57-440b-a189-152bd9b2ec4c",
-      "collectionName": "ЛР 5 — REST API пользователей",
-      "started": 1793142416773,
-      "completed": 1793142418105,
-      "duration": 1332
+      "collectionId": "34d42c72-2abe-4cc5-a66e-6d8ff3a88c2c",
+      "collectionName": "ЛР 5 - REST API пользователей",
+      "started": 1793143440931,
+      "completed": 1793143443315,
+      "duration": 2384
     },
     "summary": {
       "iterations": {
@@ -31,18 +31,18 @@
         "skipped": 0
       },
       "timeStats": {
-        "responseAverage": 347.6666666666667,
-        "responseMin": 293,
-        "responseMax": 418,
-        "responseStandardDeviation": 52.21962168465882
+        "responseAverage": 698.6666666666666,
+        "responseMin": 486,
+        "responseMax": 1086,
+        "responseStandardDeviation": 274.3250302510185
       }
     },
     "executions": [
       {
         "iterationCount": 0,
         "requestExecuted": {
-          "id": "09fe97a4-a723-40bf-85f4-62069191597b",
-          "name": "GET — получить пользователя",
+          "id": "3a4c49c1-a947-404a-b05f-04245afe036f",
+          "name": "GET - получить пользователя",
           "url": {
             "protocol": "https",
             "path": [
@@ -75,7 +75,7 @@
             },
             {
               "key": "Postman-Token",
-              "value": "86f113f5-9dc6-458d-9910-bcdc0f2c1db7",
+              "value": "761431f3-4e86-426c-b9dd-61472d6026a6",
               "system": true
             },
             {
@@ -97,7 +97,7 @@
           "method": "GET"
         },
         "response": {
-          "id": "fee1cecf-6e72-40a7-9ee8-b8822e1b16c2",
+          "id": "518625f4-362f-4565-b7ac-3f1fefa26580",
           "_details": {
             "name": "OK",
             "detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action.",
@@ -109,7 +109,7 @@
           "headers": [
             {
               "key": "Date",
-              "value": "Tue, 27 Oct 2026 23:06:57 GMT"
+              "value": "Tue, 27 Oct 2026 23:24:02 GMT"
             },
             {
               "key": "Content-Type",
@@ -169,7 +169,7 @@
             },
             {
               "key": "Report-To",
-              "value": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=uR4tvKg%2FtP6P55IdAjkguWSMlIW1%2FHEVjzmboVmccCkzdeBHxp5qrsqYBl371O%2BMoI1DpeJWWJrGulEu51H%2FXrXuha93mfjoFWs0V7GJctfTRWkpRyda4vd%2BDGIygfmvt4QPzABAIeWZuCyYmRGH\"}]}"
+              "value": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=P%2FGpJoBjY04m94DClvdGhRfCikZQE1frilNY1Ow1X3PpyXJrJkS9A%2BVcRC%2FnVoZ%2F8o3u0U5VkfV8kIAuvCP9Leama%2FMXOijg7brk59o8Dcsewb1n3RdFf54Cb2GnG7Zd5ppWRDYXrLXc5CvTgsz5\"}]}"
             },
             {
               "key": "Nel",
@@ -177,7 +177,7 @@
             },
             {
               "key": "Age",
-              "value": "2631"
+              "value": "3656"
             },
             {
               "key": "cf-cache-status",
@@ -193,7 +193,7 @@
             },
             {
               "key": "CF-RAY",
-              "value": "a5155aacc823543a-TLL"
+              "value": "a51573b11c56542d-TLL"
             },
             {
               "key": "alt-svc",
@@ -715,7 +715,7 @@
             ]
           },
           "cookies": [],
-          "responseTime": 418,
+          "responseTime": 1086,
           "responseSize": 509,
           "downloadedBytes": 325
         },
@@ -742,8 +742,8 @@
       {
         "iterationCount": 0,
         "requestExecuted": {
-          "id": "77e26520-10ee-4285-935f-8cfc935f0dee",
-          "name": "POST — создать пользователя",
+          "id": "7f39c8df-3347-4374-b09c-63daafe84cec",
+          "name": "POST - создать пользователя",
           "url": {
             "protocol": "https",
             "path": [
@@ -779,7 +779,7 @@
             },
             {
               "key": "Postman-Token",
-              "value": "d243dc85-d56f-4eb5-8855-be8984c7239b",
+              "value": "83325f5a-634a-4605-8c85-75ab67e19868",
               "system": true
             },
             {
@@ -815,7 +815,7 @@
           }
         },
         "response": {
-          "id": "dff91aeb-1c92-4209-a766-d2597b2bac70",
+          "id": "382b0d90-4187-40c0-9d65-6cc5a3b6f496",
           "_details": {
             "name": "Created",
             "detail": "The request has been fulfilled and resulted in a new resource being created.",
@@ -827,7 +827,7 @@
           "headers": [
             {
               "key": "Date",
-              "value": "Tue, 27 Oct 2026 23:06:57 GMT"
+              "value": "Tue, 27 Oct 2026 23:24:02 GMT"
             },
             {
               "key": "Content-Type",
@@ -887,7 +887,7 @@
             },
             {
               "key": "x-ratelimit-remaining",
-              "value": "3599995"
+              "value": "3599993"
             },
             {
               "key": "x-ratelimit-reset",
@@ -899,7 +899,7 @@
             },
             {
               "key": "Report-To",
-              "value": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=cBm1DONAUda2HeyPqV103I2bK6SZMBWGS8mpg4pltd9IY3g89G5OW1FFgU2FbJiDLQmrznvx1lOVW8%2BjBqDgOSTLMiTiRDjZvIvMqLwx%2FomTFQsEyTRPG7Izufjl1vwJWPQgXQBqVa8jlhQkwsWU\"}]}"
+              "value": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=M%2FtHo679973q%2Be65Takerwb1CpQfgvnsrZ2DdmkT24NKQI%2BR4AUSaKT3kdezOFgHL6QZiS18rYL7qPoTVFHfFzuyDQm%2BerocRwd0HiTwB1WWQYze4N7aUUpmoI3yDqrFDKfRNInxraqyiT%2FkyUK0\"}]}"
             },
             {
               "key": "Nel",
@@ -911,7 +911,7 @@
             },
             {
               "key": "CF-RAY",
-              "value": "a5155aae595f543a-TLL"
+              "value": "a51573b39e51542d-TLL"
             },
             {
               "key": "alt-svc",
@@ -1028,7 +1028,7 @@
             ]
           },
           "cookies": [],
-          "responseTime": 293,
+          "responseTime": 486,
           "responseSize": 104,
           "downloadedBytes": 104
         },
@@ -1055,8 +1055,8 @@
       {
         "iterationCount": 0,
         "requestExecuted": {
-          "id": "945d085c-4ba2-4603-8469-1002ee74e092",
-          "name": "PUT — обновить пользователя",
+          "id": "00e6b97d-d07d-4d5d-9a52-0abe7789618b",
+          "name": "PUT - обновить пользователя",
           "url": {
             "protocol": "https",
             "path": [
@@ -1093,7 +1093,7 @@
             },
             {
               "key": "Postman-Token",
-              "value": "e3bea9d5-078a-460f-8cb5-796bfdf7a80f",
+              "value": "b5ffb7a1-3af1-484f-b42c-843a4ce9c484",
               "system": true
             },
             {
@@ -1129,7 +1129,7 @@
           }
         },
         "response": {
-          "id": "675b0302-225d-410c-9635-991393b6c3ba",
+          "id": "e23c69fa-fd50-4b58-b330-697e00bd1cc4",
           "_details": {
             "name": "OK",
             "detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action.",
@@ -1141,7 +1141,7 @@
           "headers": [
             {
               "key": "Date",
-              "value": "Tue, 27 Oct 2026 23:06:58 GMT"
+              "value": "Tue, 27 Oct 2026 23:24:03 GMT"
             },
             {
               "key": "Content-Type",
@@ -1193,7 +1193,7 @@
             },
             {
               "key": "x-ratelimit-remaining",
-              "value": "3599994"
+              "value": "3599992"
             },
             {
               "key": "x-ratelimit-reset",
@@ -1205,7 +1205,7 @@
             },
             {
               "key": "Report-To",
-              "value": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=6NVkI7YyizamlYGMecS79C7WGEtqcq7gJYugF5xwg2K%2F8tVcjnjfHeTcfTfyioPwdhyMjju4cx7oTzfqrJsFntqLnqDYTxHdj1sLKatkyiaPsOh2vf5jFfujZ6hNxffGj8DumysruF8AiXIziuTc\"}]}"
+              "value": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=dXuYECSn2qAZY01mER%2BMtQokvsIOpPYSjjn9QqczpTE8Kf3bCROmDPB6PN60w2dV0JJ2ght%2BaW46PTVy8zx274covjkidod%2FgHb43ejlJyn8x3%2F1hg8HBXiXi0A%2FBE9vb1UG14zNpBrxj1o317lG\"}]}"
             },
             {
               "key": "Nel",
@@ -1221,7 +1221,7 @@
             },
             {
               "key": "CF-RAY",
-              "value": "a5155ab0abbe543a-TLL"
+              "value": "a51573b71962542d-TLL"
             },
             {
               "key": "alt-svc",
@@ -1343,7 +1343,7 @@
             ]
           },
           "cookies": [],
-          "responseTime": 332,
+          "responseTime": 524,
           "responseSize": 109,
           "downloadedBytes": 85
         },

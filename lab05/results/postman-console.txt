@@ -4,27 +4,27 @@ Refer:https://learning.postman.com/docs/postman-cli/postman-cli-options/#postman
 Running your collection...
 postman
 
-ЛР 5 — REST API пользователей
+ЛР 5 - REST API пользователей
 
-Root GET — получить пользователя
+Root GET - получить пользователя
 
-  GET https://jsonplaceholder.typicode.com/users/1 [200 OK, 1.25 KB, 418 ms]
+  GET https://jsonplaceholder.typicode.com/users/1 [200 OK, 1.25 KB, 1086 ms]
   Pass  Status 200
   Pass  JSON content type
   Pass  User structure
   Pass  User values
 
-Root POST — создать пользователя
+Root POST - создать пользователя
 
-  POST https://jsonplaceholder.typicode.com/users [201 Created, 1.11 KB, 293 ms]
+  POST https://jsonplaceholder.typicode.com/users [201 Created, 1.12 KB, 486 ms]
   Pass  Status 201
   Pass  JSON content type
   Pass  Created user structure
   Pass  Created user values
 
-Root PUT — обновить пользователя
+Root PUT - обновить пользователя
 
-  PUT https://jsonplaceholder.typicode.com/users/1 [200 OK, 1017 B, 332 ms]
+  PUT https://jsonplaceholder.typicode.com/users/1 [200 OK, 1 KB, 524 ms]
   Pass  Status 200
   Pass  JSON content type
   Pass  Updated user structure
@@ -33,27 +33,27 @@ Generating run report [json]...
 Saving run report [json]...
 Generating run report [html]...
 Saving run report [html]...
-Report created successfully! Saved to: C:\Users\Neraw\Desktop\7th semester\TPO\lab05\results\postman-run.json
 Report created successfully! Saved to: C:\Users\Neraw\Desktop\7th semester\TPO\lab05\results\postman-run.html
+Report created successfully! Saved to: C:\Users\Neraw\Desktop\7th semester\TPO\lab05\results\postman-run.json
 
--------------------------------------------------------------------------
-|                         |             executed |               failed |
---------------------------+----------------------+-----------------------
-|              iterations |                    1 |                    0 |
---------------------------+----------------------+-----------------------
-|                requests |                    3 |                    0 |
---------------------------+----------------------+-----------------------
-|            test-scripts |                    3 |                    0 |
---------------------------+----------------------+-----------------------
-|      prerequest-scripts |                    0 |                    0 |
---------------------------+----------------------+-----------------------
-|              assertions |                   12 |                    0 |
--------------------------------------------------------------------------
-| total run duration: 1332 ms                                           |
--------------------------------------------------------------------------
-| total data received: 514 B (approx)                                   |
--------------------------------------------------------------------------
-| average response time: 347 ms [min: 293 ms, max: 418 ms, s.d.: 52 ms] |
--------------------------------------------------------------------------
+---------------------------------------------------------------------------
+|                         |              executed |                failed |
+--------------------------+-----------------------+------------------------
+|              iterations |                     1 |                     0 |
+--------------------------+-----------------------+------------------------
+|                requests |                     3 |                     0 |
+--------------------------+-----------------------+------------------------
+|            test-scripts |                     3 |                     0 |
+--------------------------+-----------------------+------------------------
+|      prerequest-scripts |                     0 |                     0 |
+--------------------------+-----------------------+------------------------
+|              assertions |                    12 |                     0 |
+---------------------------------------------------------------------------
+| total run duration: 2.3 s                                               |
+---------------------------------------------------------------------------
+| total data received: 514 B (approx)                                     |
+---------------------------------------------------------------------------
+| average response time: 698 ms [min: 486 ms, max: 1086 ms, s.d.: 274 ms] |
+---------------------------------------------------------------------------
 Postman credentials are required for publishing run details to Postman cloud.
 Please specify it by using the `postman login` command

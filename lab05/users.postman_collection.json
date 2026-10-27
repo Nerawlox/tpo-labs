@@ -1,13 +1,13 @@
 {
   "info": {
-    "name": "ЛР 5 — REST API пользователей",
+    "name": "ЛР 5 - REST API пользователей",
     "description": "GET, POST, PUT на JSONPlaceholder. Запись имитируется; изменения не сохраняются на сервере.",
     "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
   },
   "variable": [{"key":"base_url", "value":"https://jsonplaceholder.typicode.com"}],
   "item": [
     {
-      "name": "GET — получить пользователя",
+      "name": "GET - получить пользователя",
       "request": {"method":"GET", "url":"{{base_url}}/users/1"},
       "event": [{"listen":"test", "script":{"type":"text/javascript", "exec":[
         "pm.test('Status 200', () => pm.response.to.have.status(200));",
@@ -18,7 +18,7 @@
       ]}}]
     },
     {
-      "name": "POST — создать пользователя",
+      "name": "POST - создать пользователя",
       "request": {"method":"POST", "url":"{{base_url}}/users", "header":[{"key":"Content-Type","value":"application/json"}], "body":{"mode":"raw","raw":"{\"name\":\"Student Test\",\"username\":\"student_test\",\"email\":\"student@example.com\"}","options":{"raw":{"language":"json"}}}},
       "event": [{"listen":"test", "script":{"type":"text/javascript", "exec":[
         "pm.test('Status 201', () => pm.response.to.have.status(201));",
@@ -29,7 +29,7 @@
       ]}}]
     },
     {
-      "name": "PUT — обновить пользователя",
+      "name": "PUT - обновить пользователя",
       "request": {"method":"PUT", "url":"{{base_url}}/users/1", "header":[{"key":"Content-Type","value":"application/json"}], "body":{"mode":"raw","raw":"{\"id\":1,\"name\":\"Updated Student\",\"username\":\"student_updated\",\"email\":\"updated@example.com\"}","options":{"raw":{"language":"json"}}}},
       "event": [{"listen":"test", "script":{"type":"text/javascript", "exec":[
         "pm.test('Status 200', () => pm.response.to.have.status(200));",

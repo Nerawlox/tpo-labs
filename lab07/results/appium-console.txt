@@ -1,0 +1,9 @@
+{'id': 'M01', 'expected': 'Введите текст заметки', 'actual': 'Введите текст заметки', 'status': 'PASS', 'screenshot': 'screenshots/02_empty_validation.png'}
+{'id': 'M02', 'expected': True, 'actual': True, 'status': 'PASS', 'screenshot': 'screenshots/03_note_added.png'}
+{'id': 'M03', 'expected': True, 'actual': True, 'status': 'PASS', 'screenshot': 'screenshots/04_landscape.png'}
+{'id': 'M04', 'expected': True, 'actual': True, 'status': 'PASS', 'screenshot': 'screenshots/05_background_return.png'}
+{'id': 'M05', 'expected': True, 'actual': True, 'status': 'PASS', 'screenshot': 'screenshots/06_sms_interruption.png'}
+{'id': 'M06', 'expected': True, 'actual': True, 'status': 'PASS', 'screenshot': 'screenshots/08_after_call.png'}
+{'id': 'M07', 'expected': True, 'actual': True, 'status': 'PASS', 'screenshot': 'screenshots/09_process_restart.png'}
+{'id': 'M08', 'expected': 'Заметок: 16', 'actual': 'Заметок: 16', 'status': 'PASS', 'screenshot': 'screenshots/10_scroll_and_memory.png'}
+{'id': 'M09', 'expected': 'Черновик', 'actual': 'Черновик', 'status': 'PASS', 'screenshot': 'screenshots/11_draft_after_rotation.png'}

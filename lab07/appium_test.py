@@ -48,6 +48,7 @@ if __name__ == "__main__":
     def has_note(): return "Первая заметка" in driver.page_source
     try:
         wait.until(lambda _: find("add_note").is_displayed())
+        portrait_width=driver.get_window_rect()["width"]
         shot("01_launch")
         find("add_note").click()
         record("M01","Введите текст заметки",find("note_error").text,"02_empty_validation")
@@ -57,8 +58,10 @@ if __name__ == "__main__":
         record("M02",True,has_note(),"03_note_added")
         driver.orientation="LANDSCAPE"
         wait.until(lambda _:driver.orientation=="LANDSCAPE")
+        wait.until(lambda _:find("add_note").rect["width"]>portrait_width)
         record("M03",True,has_note(),"04_landscape")
         driver.orientation="PORTRAIT"
+        wait.until(lambda _:find("add_note").rect["width"]<portrait_width)
         driver.press_keycode(3);driver.activate_app(PACKAGE)
         record("M04",True,has_note(),"05_background_return")
         sms_result = adb("emu","sms","send","5551234","Training message")
@@ -70,7 +73,7 @@ if __name__ == "__main__":
         (results/"telephony.txt").write_text(registry,encoding="utf-8")
         adb("emu","gsm","cancel","5551234")
         driver.activate_app(PACKAGE)
-        record("M06",True,"OK" in call_result and has_note(),"08_after_call")
+        record("M06",True,"OK" in call_result and "mCallState=1" in registry and has_note(),"08_after_call")
         adb("shell","am","force-stop",PACKAGE);driver.activate_app(PACKAGE)
         wait.until(lambda _:find("add_note").is_displayed())
         record("M07",True,has_note(),"09_process_restart")
@@ -84,13 +87,16 @@ if __name__ == "__main__":
         record("M08","Заметок: 16",find("note_count").text,"10_scroll_and_memory")
         find("note_input").send_keys("Черновик")
         driver.orientation="LANDSCAPE"
+        wait.until(lambda _:find("add_note").rect["width"]>portrait_width)
         wait.until(lambda _:find("note_input").text=="Черновик")
         record("M09","Черновик",find("note_input").text,"11_draft_after_rotation")
         driver.orientation="PORTRAIT"
-        driver.hide_keyboard()
+        wait.until(lambda _:find("add_note").rect["width"]<portrait_width)
+        if driver.is_keyboard_shown():
+            driver.hide_keyboard()
         shot("12_final_notes")
     finally:
-        info={"executed_at":datetime.now().astimezone().isoformat(),"device":adb("shell","getprop","ro.product.model"),"android":adb("shell","getprop","ro.build.version.release"),"method":"Actual emulator/Appium interaction; human manual execution is not claimed","checks":checks}
+        info={"executed_at":datetime.now().astimezone().isoformat(),"device":adb("shell","getprop","ro.product.model"),"android":adb("shell","getprop","ro.build.version.release"),"method":"Appium UI checks on Android Emulator","checks":checks}
         (results/"mobile-checks.json").write_text(json.dumps(info,ensure_ascii=False,indent=2),encoding="utf-8")
         driver.quit()
     assert len(checks)==9 and all(c['status']=='PASS' for c in checks)

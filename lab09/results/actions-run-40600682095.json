@@ -1,0 +1,30 @@
+{
+  "id": 40600682095,
+  "html_url": "https://github.com/Nerawlox/tpo-labs/actions/runs/40600682095",
+  "head_sha": "c3dea06048d49d3aff235429b8e01b54537b1b90",
+  "status": "completed",
+  "conclusion": "success",
+  "run_started_at": "2026-10-27T23:13:57Z",
+  "updated_at": "2026-10-27T23:14:50Z",
+  "run_number": 1,
+  "jobs": [
+    {
+      "id": 122527725628,
+      "name": "ui-tests",
+      "status": "completed",
+      "conclusion": "success",
+      "started_at": "2026-10-27T23:14:01Z",
+      "completed_at": "2026-10-27T23:14:50Z",
+      "html_url": "https://github.com/Nerawlox/tpo-labs/actions/runs/40600682095/job/122527725628"
+    },
+    {
+      "id": 122527725984,
+      "name": "unit-tests",
+      "status": "completed",
+      "conclusion": "success",
+      "started_at": "2026-10-27T23:14:01Z",
+      "completed_at": "2026-10-27T23:14:15Z",
+      "html_url": "https://github.com/Nerawlox/tpo-labs/actions/runs/40600682095/job/122527725984"
+    }
+  ]
+}
