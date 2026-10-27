@@ -62,5 +62,7 @@
 | 8. Нагрузка k6 | [10vus-30s.png](lab08/screenshots/10vus-30s.png) | 1418 × 926 |
 | 8. Нагрузка k6 | [50vus-10s.png](lab08/screenshots/50vus-10s.png) | 1418 × 926 |
 | 9. GitHub Actions | [01_actions_success.jpg](lab09/screenshots/01_actions_success.jpg) | 1265 × 712 |
+| 9. GitHub Actions | [02_readme.jpg](lab09/screenshots/02_readme.jpg) | 1265 × 712 |
+| 9. GitHub Actions | [03_final_actions_success.jpg](lab09/screenshots/03_final_actions_success.jpg) | 1265 × 712 |
 
-Всего изображений: 58.
+Всего изображений: 60.

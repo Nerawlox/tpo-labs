@@ -13,4 +13,6 @@
 
 Первый реальный запуск: https://github.com/Nerawlox/tpo-labs/actions/runs/40600682095. Оба задания завершились успешно: 50 unit-тестов и 14 UI-тестов. Статус и сведения о заданиях сохранены в results/actions-run-40600682095.json, снимок страницы в screenshots/01_actions_success.jpg.
 
+Финальный код 757ec32 также прошел оба задания: https://github.com/Nerawlox/tpo-labs/actions/runs/40602383008. Статус сохранен в results/actions-run-40602383008.json, снимок в screenshots/03_final_actions_success.jpg. В screenshots/02_readme.jpg сохранен обновленный README.
+
 Источник: [GitHub - Building and testing Python](https://docs.github.com/en/actions/tutorials/build-and-test-code/python).
