@@ -1,0 +1,20 @@
+{
+  "executed_at": "2026-10-28T02:06:47.972470+03:00",
+  "method": "PUT",
+  "url": "https://jsonplaceholder.typicode.com/users/1",
+  "request_body": {
+    "id": 1,
+    "name": "Updated Student",
+    "username": "student_updated",
+    "email": "updated@example.com"
+  },
+  "status_code": 200,
+  "content_type": "application/json; charset=utf-8",
+  "elapsed_ms": 1049.02,
+  "response_body": {
+    "id": 1,
+    "name": "Updated Student",
+    "username": "student_updated",
+    "email": "updated@example.com"
+  }
+}

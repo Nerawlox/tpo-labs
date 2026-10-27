@@ -1,0 +1,61 @@
+{
+  "executed_at": "2026-10-28T02:03:24.007507+03:00",
+  "environment": {
+    "os": "Windows-11-10.0.26200-SP0",
+    "browser": "chrome",
+    "browser_version": "156.0.8078.48",
+    "url": "http://127.0.0.1:8765/lab02/app/"
+  },
+  "method": "UI case replay; Selenium performs input and captures unedited browser screenshots",
+  "cases": [
+    {
+      "id": "UI01",
+      "expected": "['Подготовить тест-кейсы']",
+      "actual": "['Подготовить тест-кейсы']",
+      "status": "PASS",
+      "screenshot": "lab02\\screenshots\\01_add_task.png"
+    },
+    {
+      "id": "UI02",
+      "expected": "1 задача",
+      "actual": "2 задачи",
+      "status": "FAIL",
+      "screenshot": "lab02\\screenshots\\02_blank_task_bug.png"
+    },
+    {
+      "id": "UI03",
+      "expected": "Осталось активных: 1",
+      "actual": "Осталось активных: 2",
+      "status": "FAIL",
+      "screenshot": "lab02\\screenshots\\03_counter_bug.png"
+    },
+    {
+      "id": "UI04",
+      "expected": "['Подготовить тест-кейсы']",
+      "actual": "['Проверить приложение']",
+      "status": "FAIL",
+      "screenshot": "lab02\\screenshots\\04_completed_filter_bug.png"
+    },
+    {
+      "id": "UI05",
+      "expected": "['Проверить приложение']",
+      "actual": "['Проверить приложение']",
+      "status": "PASS",
+      "screenshot": "lab02\\screenshots\\05_active_filter.png"
+    },
+    {
+      "id": "UI06",
+      "expected": "['Подготовить тест-кейсы', 'Проверить приложение']",
+      "actual": "['Подготовить тест-кейсы', 'Проверить приложение']",
+      "status": "PASS",
+      "screenshot": "lab02\\screenshots\\06_persistence.png"
+    },
+    {
+      "id": "UI07",
+      "expected": "['Подготовить тест-кейсы']",
+      "actual": "['Проверить приложение']",
+      "status": "FAIL",
+      "screenshot": "lab02\\screenshots\\07_delete_wrong_task_bug.png"
+    }
+  ]
+}

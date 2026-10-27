@@ -1,0 +1,15 @@
+{
+  "started_at": "2026-10-28T02:06:49.414988+03:00",
+  "exit_code": 0,
+  "command": [
+    "python",
+    "-m",
+    "pytest",
+    "lab06",
+    "-v",
+    "--color=no",
+    "--junitxml=lab06/results/junit.xml",
+    "--html=lab06/results/test-run.html",
+    "--self-contained-html"
+  ]
+}

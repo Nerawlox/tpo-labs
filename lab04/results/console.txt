@@ -1,0 +1,25 @@
+============================= test session starts =============================
+platform win32 -- Python 3.14.7, pytest-9.2.0, pluggy-1.7.0 -- C:\Users\Neraw\Desktop\7th semester\TPO\.venv\Scripts\python.exe
+cachedir: .pytest_cache
+metadata: {'Python': '3.14.7', 'Platform': 'Windows-11-10.0.26200-SP0', 'Packages': {'pytest': '9.2.0', 'pluggy': '1.7.0'}, 'Plugins': {'html': '4.2.0', 'metadata': '3.1.1'}}
+rootdir: C:\Users\Neraw\Desktop\7th semester\TPO
+configfile: pytest.ini
+plugins: html-4.2.0, metadata-3.1.1
+collecting ... collected 12 items
+
+lab04/test_contact.py::test_required_fields_matrix[True-True-True] PASSED [  8%]
+lab04/test_contact.py::test_required_fields_matrix[True-True-False] PASSED [ 16%]
+lab04/test_contact.py::test_required_fields_matrix[True-False-True] PASSED [ 25%]
+lab04/test_contact.py::test_required_fields_matrix[True-False-False] PASSED [ 33%]
+lab04/test_contact.py::test_required_fields_matrix[False-True-True] PASSED [ 41%]
+lab04/test_contact.py::test_required_fields_matrix[False-True-False] PASSED [ 50%]
+lab04/test_contact.py::test_required_fields_matrix[False-False-True] PASSED [ 58%]
+lab04/test_contact.py::test_required_fields_matrix[False-False-False] PASSED [ 66%]
+lab04/test_contact.py::test_invalid_email[invalid] PASSED                [ 75%]
+lab04/test_contact.py::test_invalid_email[a@b] PASSED                    [ 83%]
+lab04/test_contact.py::test_invalid_email[user @example.com] PASSED      [ 91%]
+lab04/test_contact.py::test_whitespace_is_not_a_name PASSED              [100%]
+
+- generated xml file: C:\Users\Neraw\Desktop\7th semester\TPO\lab04\results\junit.xml -
+- Generated html report: file:///C:/Users/Neraw/Desktop/7th%20semester/TPO/lab04/results/test-run.html -
+============================= 12 passed in 40.26s =============================

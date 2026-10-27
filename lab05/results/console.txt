@@ -1,0 +1,17 @@
+============================= test session starts =============================
+platform win32 -- Python 3.14.7, pytest-9.2.0, pluggy-1.7.0 -- C:\Users\Neraw\Desktop\7th semester\TPO\.venv\Scripts\python.exe
+cachedir: .pytest_cache
+metadata: {'Python': '3.14.7', 'Platform': 'Windows-11-10.0.26200-SP0', 'Packages': {'pytest': '9.2.0', 'pluggy': '1.7.0'}, 'Plugins': {'html': '4.2.0', 'metadata': '3.1.1'}}
+rootdir: C:\Users\Neraw\Desktop\7th semester\TPO
+configfile: pytest.ini
+plugins: html-4.2.0, metadata-3.1.1
+collecting ... collected 4 items
+
+lab05/test_users_api.py::test_get_user PASSED                            [ 25%]
+lab05/test_users_api.py::test_create_user PASSED                         [ 50%]
+lab05/test_users_api.py::test_update_user PASSED                         [ 75%]
+lab05/test_users_api.py::test_missing_user PASSED                        [100%]
+
+- generated xml file: C:\Users\Neraw\Desktop\7th semester\TPO\lab05\results\junit.xml -
+- Generated html report: file:///C:/Users/Neraw/Desktop/7th%20semester/TPO/lab05/results/test-run.html -
+============================== 4 passed in 3.85s ==============================

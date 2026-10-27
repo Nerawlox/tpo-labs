@@ -1,0 +1,15 @@
+============================= test session starts =============================
+platform win32 -- Python 3.14.7, pytest-9.2.0, pluggy-1.7.0 -- C:\Users\Neraw\Desktop\7th semester\TPO\.venv\Scripts\python.exe
+cachedir: .pytest_cache
+metadata: {'Python': '3.14.7', 'Platform': 'Windows-11-10.0.26200-SP0', 'Packages': {'pytest': '9.2.0', 'pluggy': '1.7.0'}, 'Plugins': {'html': '4.2.0', 'metadata': '3.1.1'}}
+rootdir: C:\Users\Neraw\Desktop\7th semester\TPO
+configfile: pytest.ini
+plugins: html-4.2.0, metadata-3.1.1
+collecting ... collected 2 items
+
+lab03/test_login.py::test_valid_login_and_logout PASSED                  [ 50%]
+lab03/test_login.py::test_invalid_login PASSED                           [100%]
+
+- generated xml file: C:\Users\Neraw\Desktop\7th semester\TPO\lab03\results\junit.xml -
+- Generated html report: file:///C:/Users/Neraw/Desktop/7th%20semester/TPO/lab03/results/test-run.html -
+============================== 2 passed in 7.33s ==============================

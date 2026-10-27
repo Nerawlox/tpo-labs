@@ -1,0 +1,17 @@
+.venv/
+.tools/
+__pycache__/
+.pytest_cache/
+*.pyc
+*.log.tmp
+tmp/
+lab07/build/
+lab07/.gradle/
+lab07/local.properties
+lab07/debug.keystore
+*.jks
+*.keystore
+.env
+docs/
+/План выполнения.md
+*.inspect.ndjson

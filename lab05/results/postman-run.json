@@ -1,0 +1,1373 @@
+{
+  "run": {
+    "meta": {
+      "collectionId": "c1e36455-0d57-440b-a189-152bd9b2ec4c",
+      "collectionName": "ЛР 5 — REST API пользователей",
+      "started": 1793142416773,
+      "completed": 1793142418105,
+      "duration": 1332
+    },
+    "summary": {
+      "iterations": {
+        "executed": 1,
+        "errors": 0
+      },
+      "executedRequests": {
+        "executed": 3,
+        "errors": 0
+      },
+      "prerequestScripts": {
+        "executed": 0,
+        "errors": 0
+      },
+      "postresponseScripts": {
+        "executed": 3,
+        "errors": 0
+      },
+      "tests": {
+        "executed": 12,
+        "failed": 0,
+        "passed": 12,
+        "skipped": 0
+      },
+      "timeStats": {
+        "responseAverage": 347.6666666666667,
+        "responseMin": 293,
+        "responseMax": 418,
+        "responseStandardDeviation": 52.21962168465882
+      }
+    },
+    "executions": [
+      {
+        "iterationCount": 0,
+        "requestExecuted": {
+          "id": "09fe97a4-a723-40bf-85f4-62069191597b",
+          "name": "GET — получить пользователя",
+          "url": {
+            "protocol": "https",
+            "path": [
+              "users",
+              "1"
+            ],
+            "host": [
+              "jsonplaceholder",
+              "typicode",
+              "com"
+            ],
+            "query": [],
+            "variable": []
+          },
+          "headers": [
+            {
+              "key": "User-Agent",
+              "value": "PostmanRuntime/7.56.2",
+              "system": true
+            },
+            {
+              "key": "Accept",
+              "value": "*/*",
+              "system": true
+            },
+            {
+              "key": "Cache-Control",
+              "value": "no-cache",
+              "system": true
+            },
+            {
+              "key": "Postman-Token",
+              "value": "86f113f5-9dc6-458d-9910-bcdc0f2c1db7",
+              "system": true
+            },
+            {
+              "key": "Host",
+              "value": "jsonplaceholder.typicode.com",
+              "system": true
+            },
+            {
+              "key": "Accept-Encoding",
+              "value": "gzip, deflate, br",
+              "system": true
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive",
+              "system": true
+            }
+          ],
+          "method": "GET"
+        },
+        "response": {
+          "id": "fee1cecf-6e72-40a7-9ee8-b8822e1b16c2",
+          "_details": {
+            "name": "OK",
+            "detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action.",
+            "code": 200,
+            "standardName": "OK"
+          },
+          "status": "OK",
+          "code": 200,
+          "headers": [
+            {
+              "key": "Date",
+              "value": "Tue, 27 Oct 2026 23:06:57 GMT"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "Transfer-Encoding",
+              "value": "chunked"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "access-control-allow-credentials",
+              "value": "true"
+            },
+            {
+              "key": "Cache-Control",
+              "value": "max-age=43200"
+            },
+            {
+              "key": "etag",
+              "value": "W/\"1fd-+2Y3G3w049iSZtw5t1mzSnunngE\""
+            },
+            {
+              "key": "expires",
+              "value": "-1"
+            },
+            {
+              "key": "pragma",
+              "value": "no-cache"
+            },
+            {
+              "key": "vary",
+              "value": "Origin, Accept-Encoding"
+            },
+            {
+              "key": "x-content-type-options",
+              "value": "nosniff"
+            },
+            {
+              "key": "x-powered-by",
+              "value": "Express"
+            },
+            {
+              "key": "x-ratelimit-limit",
+              "value": "3600000"
+            },
+            {
+              "key": "x-ratelimit-remaining",
+              "value": "3599999"
+            },
+            {
+              "key": "x-ratelimit-reset",
+              "value": "1790812826"
+            },
+            {
+              "key": "Report-To",
+              "value": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=uR4tvKg%2FtP6P55IdAjkguWSMlIW1%2FHEVjzmboVmccCkzdeBHxp5qrsqYBl371O%2BMoI1DpeJWWJrGulEu51H%2FXrXuha93mfjoFWs0V7GJctfTRWkpRyda4vd%2BDGIygfmvt4QPzABAIeWZuCyYmRGH\"}]}"
+            },
+            {
+              "key": "Nel",
+              "value": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}"
+            },
+            {
+              "key": "Age",
+              "value": "2631"
+            },
+            {
+              "key": "cf-cache-status",
+              "value": "HIT"
+            },
+            {
+              "key": "Content-Encoding",
+              "value": "br"
+            },
+            {
+              "key": "Server",
+              "value": "cloudflare"
+            },
+            {
+              "key": "CF-RAY",
+              "value": "a5155aacc823543a-TLL"
+            },
+            {
+              "key": "alt-svc",
+              "value": "h3=\":443\"; ma=86400"
+            }
+          ],
+          "stream": {
+            "type": "Buffer",
+            "data": [
+              123,
+              10,
+              32,
+              32,
+              34,
+              105,
+              100,
+              34,
+              58,
+              32,
+              49,
+              44,
+              10,
+              32,
+              32,
+              34,
+              110,
+              97,
+              109,
+              101,
+              34,
+              58,
+              32,
+              34,
+              76,
+              101,
+              97,
+              110,
+              110,
+              101,
+              32,
+              71,
+              114,
+              97,
+              104,
+              97,
+              109,
+              34,
+              44,
+              10,
+              32,
+              32,
+              34,
+              117,
+              115,
+              101,
+              114,
+              110,
+              97,
+              109,
+              101,
+              34,
+              58,
+              32,
+              34,
+              66,
+              114,
+              101,
+              116,
+              34,
+              44,
+              10,
+              32,
+              32,
+              34,
+              101,
+              109,
+              97,
+              105,
+              108,
+              34,
+              58,
+              32,
+              34,
+              83,
+              105,
+              110,
+              99,
+              101,
+              114,
+              101,
+              64,
+              97,
+              112,
+              114,
+              105,
+              108,
+              46,
+              98,
+              105,
+              122,
+              34,
+              44,
+              10,
+              32,
+              32,
+              34,
+              97,
+              100,
+              100,
+              114,
+              101,
+              115,
+              115,
+              34,
+              58,
+              32,
+              123,
+              10,
+              32,
+              32,
+              32,
+              32,
+              34,
+              115,
+              116,
+              114,
+              101,
+              101,
+              116,
+              34,
+              58,
+              32,
+              34,
+              75,
+              117,
+              108,
+              97,
+              115,
+              32,
+              76,
+              105,
+              103,
+              104,
+              116,
+              34,
+              44,
+              10,
+              32,
+              32,
+              32,
+              32,
+              34,
+              115,
+              117,
+              105,
+              116,
+              101,
+              34,
+              58,
+              32,
+              34,
+              65,
+              112,
+              116,
+              46,
+              32,
+              53,
+              53,
+              54,
+              34,
+              44,
+              10,
+              32,
+              32,
+              32,
+              32,
+              34,
+              99,
+              105,
+              116,
+              121,
+              34,
+              58,
+              32,
+              34,
+              71,
+              119,
+              101,
+              110,
+              98,
+              111,
+              114,
+              111,
+              117,
+              103,
+              104,
+              34,
+              44,
+              10,
+              32,
+              32,
+              32,
+              32,
+              34,
+              122,
+              105,
+              112,
+              99,
+              111,
+              100,
+              101,
+              34,
+              58,
+              32,
+              34,
+              57,
+              50,
+              57,
+              57,
+              56,
+              45,
+              51,
+              56,
+              55,
+              52,
+              34,
+              44,
+              10,
+              32,
+              32,
+              32,
+              32,
+              34,
+              103,
+              101,
+              111,
+              34,
+              58,
+              32,
+              123,
+              10,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              34,
+              108,
+              97,
+              116,
+              34,
+              58,
+              32,
+              34,
+              45,
+              51,
+              55,
+              46,
+              51,
+              49,
+              53,
+              57,
+              34,
+              44,
+              10,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              34,
+              108,
+              110,
+              103,
+              34,
+              58,
+              32,
+              34,
+              56,
+              49,
+              46,
+              49,
+              52,
+              57,
+              54,
+              34,
+              10,
+              32,
+              32,
+              32,
+              32,
+              125,
+              10,
+              32,
+              32,
+              125,
+              44,
+              10,
+              32,
+              32,
+              34,
+              112,
+              104,
+              111,
+              110,
+              101,
+              34,
+              58,
+              32,
+              34,
+              49,
+              45,
+              55,
+              55,
+              48,
+              45,
+              55,
+              51,
+              54,
+              45,
+              56,
+              48,
+              51,
+              49,
+              32,
+              120,
+              53,
+              54,
+              52,
+              52,
+              50,
+              34,
+              44,
+              10,
+              32,
+              32,
+              34,
+              119,
+              101,
+              98,
+              115,
+              105,
+              116,
+              101,
+              34,
+              58,
+              32,
+              34,
+              104,
+              105,
+              108,
+              100,
+              101,
+              103,
+              97,
+              114,
+              100,
+              46,
+              111,
+              114,
+              103,
+              34,
+              44,
+              10,
+              32,
+              32,
+              34,
+              99,
+              111,
+              109,
+              112,
+              97,
+              110,
+              121,
+              34,
+              58,
+              32,
+              123,
+              10,
+              32,
+              32,
+              32,
+              32,
+              34,
+              110,
+              97,
+              109,
+              101,
+              34,
+              58,
+              32,
+              34,
+              82,
+              111,
+              109,
+              97,
+              103,
+              117,
+              101,
+              114,
+              97,
+              45,
+              67,
+              114,
+              111,
+              110,
+              97,
+              34,
+              44,
+              10,
+              32,
+              32,
+              32,
+              32,
+              34,
+              99,
+              97,
+              116,
+              99,
+              104,
+              80,
+              104,
+              114,
+              97,
+              115,
+              101,
+              34,
+              58,
+              32,
+              34,
+              77,
+              117,
+              108,
+              116,
+              105,
+              45,
+              108,
+              97,
+              121,
+              101,
+              114,
+              101,
+              100,
+              32,
+              99,
+              108,
+              105,
+              101,
+              110,
+              116,
+              45,
+              115,
+              101,
+              114,
+              118,
+              101,
+              114,
+              32,
+              110,
+              101,
+              117,
+              114,
+              97,
+              108,
+              45,
+              110,
+              101,
+              116,
+              34,
+              44,
+              10,
+              32,
+              32,
+              32,
+              32,
+              34,
+              98,
+              115,
+              34,
+              58,
+              32,
+              34,
+              104,
+              97,
+              114,
+              110,
+              101,
+              115,
+              115,
+              32,
+              114,
+              101,
+              97,
+              108,
+              45,
+              116,
+              105,
+              109,
+              101,
+              32,
+              101,
+              45,
+              109,
+              97,
+              114,
+              107,
+              101,
+              116,
+              115,
+              34,
+              10,
+              32,
+              32,
+              125,
+              10,
+              125
+            ]
+          },
+          "cookies": [],
+          "responseTime": 418,
+          "responseSize": 509,
+          "downloadedBytes": 325
+        },
+        "tests": [
+          {
+            "name": "Status 200",
+            "status": "passed"
+          },
+          {
+            "name": "JSON content type",
+            "status": "passed"
+          },
+          {
+            "name": "User structure",
+            "status": "passed"
+          },
+          {
+            "name": "User values",
+            "status": "passed"
+          }
+        ],
+        "errors": []
+      },
+      {
+        "iterationCount": 0,
+        "requestExecuted": {
+          "id": "77e26520-10ee-4285-935f-8cfc935f0dee",
+          "name": "POST — создать пользователя",
+          "url": {
+            "protocol": "https",
+            "path": [
+              "users"
+            ],
+            "host": [
+              "jsonplaceholder",
+              "typicode",
+              "com"
+            ],
+            "query": [],
+            "variable": []
+          },
+          "headers": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "key": "User-Agent",
+              "value": "PostmanRuntime/7.56.2",
+              "system": true
+            },
+            {
+              "key": "Accept",
+              "value": "*/*",
+              "system": true
+            },
+            {
+              "key": "Cache-Control",
+              "value": "no-cache",
+              "system": true
+            },
+            {
+              "key": "Postman-Token",
+              "value": "d243dc85-d56f-4eb5-8855-be8984c7239b",
+              "system": true
+            },
+            {
+              "key": "Host",
+              "value": "jsonplaceholder.typicode.com",
+              "system": true
+            },
+            {
+              "key": "Accept-Encoding",
+              "value": "gzip, deflate, br",
+              "system": true
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive",
+              "system": true
+            },
+            {
+              "key": "Content-Length",
+              "value": "79",
+              "system": true
+            }
+          ],
+          "method": "POST",
+          "body": {
+            "mode": "raw",
+            "raw": "{\"name\":\"Student Test\",\"username\":\"student_test\",\"email\":\"student@example.com\"}",
+            "options": {
+              "raw": {
+                "language": "json"
+              }
+            }
+          }
+        },
+        "response": {
+          "id": "dff91aeb-1c92-4209-a766-d2597b2bac70",
+          "_details": {
+            "name": "Created",
+            "detail": "The request has been fulfilled and resulted in a new resource being created.",
+            "code": 201,
+            "standardName": "Created"
+          },
+          "status": "Created",
+          "code": 201,
+          "headers": [
+            {
+              "key": "Date",
+              "value": "Tue, 27 Oct 2026 23:06:57 GMT"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "Content-Length",
+              "value": "104"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "access-control-allow-credentials",
+              "value": "true"
+            },
+            {
+              "key": "access-control-expose-headers",
+              "value": "Location"
+            },
+            {
+              "key": "Cache-Control",
+              "value": "no-cache"
+            },
+            {
+              "key": "etag",
+              "value": "W/\"68-XHIcJR7vIzbdzpQfz9PZtGMa97U\""
+            },
+            {
+              "key": "expires",
+              "value": "-1"
+            },
+            {
+              "key": "location",
+              "value": "https://jsonplaceholder.typicode.com/users/11"
+            },
+            {
+              "key": "pragma",
+              "value": "no-cache"
+            },
+            {
+              "key": "vary",
+              "value": "Origin, X-HTTP-Method-Override, Accept-Encoding"
+            },
+            {
+              "key": "x-content-type-options",
+              "value": "nosniff"
+            },
+            {
+              "key": "x-powered-by",
+              "value": "Express"
+            },
+            {
+              "key": "x-ratelimit-limit",
+              "value": "3600000"
+            },
+            {
+              "key": "x-ratelimit-remaining",
+              "value": "3599995"
+            },
+            {
+              "key": "x-ratelimit-reset",
+              "value": "1793145542"
+            },
+            {
+              "key": "cf-cache-status",
+              "value": "DYNAMIC"
+            },
+            {
+              "key": "Report-To",
+              "value": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=cBm1DONAUda2HeyPqV103I2bK6SZMBWGS8mpg4pltd9IY3g89G5OW1FFgU2FbJiDLQmrznvx1lOVW8%2BjBqDgOSTLMiTiRDjZvIvMqLwx%2FomTFQsEyTRPG7Izufjl1vwJWPQgXQBqVa8jlhQkwsWU\"}]}"
+            },
+            {
+              "key": "Nel",
+              "value": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}"
+            },
+            {
+              "key": "Server",
+              "value": "cloudflare"
+            },
+            {
+              "key": "CF-RAY",
+              "value": "a5155aae595f543a-TLL"
+            },
+            {
+              "key": "alt-svc",
+              "value": "h3=\":443\"; ma=86400"
+            }
+          ],
+          "stream": {
+            "type": "Buffer",
+            "data": [
+              123,
+              10,
+              32,
+              32,
+              34,
+              110,
+              97,
+              109,
+              101,
+              34,
+              58,
+              32,
+              34,
+              83,
+              116,
+              117,
+              100,
+              101,
+              110,
+              116,
+              32,
+              84,
+              101,
+              115,
+              116,
+              34,
+              44,
+              10,
+              32,
+              32,
+              34,
+              117,
+              115,
+              101,
+              114,
+              110,
+              97,
+              109,
+              101,
+              34,
+              58,
+              32,
+              34,
+              115,
+              116,
+              117,
+              100,
+              101,
+              110,
+              116,
+              95,
+              116,
+              101,
+              115,
+              116,
+              34,
+              44,
+              10,
+              32,
+              32,
+              34,
+              101,
+              109,
+              97,
+              105,
+              108,
+              34,
+              58,
+              32,
+              34,
+              115,
+              116,
+              117,
+              100,
+              101,
+              110,
+              116,
+              64,
+              101,
+              120,
+              97,
+              109,
+              112,
+              108,
+              101,
+              46,
+              99,
+              111,
+              109,
+              34,
+              44,
+              10,
+              32,
+              32,
+              34,
+              105,
+              100,
+              34,
+              58,
+              32,
+              49,
+              49,
+              10,
+              125
+            ]
+          },
+          "cookies": [],
+          "responseTime": 293,
+          "responseSize": 104,
+          "downloadedBytes": 104
+        },
+        "tests": [
+          {
+            "name": "Status 201",
+            "status": "passed"
+          },
+          {
+            "name": "JSON content type",
+            "status": "passed"
+          },
+          {
+            "name": "Created user structure",
+            "status": "passed"
+          },
+          {
+            "name": "Created user values",
+            "status": "passed"
+          }
+        ],
+        "errors": []
+      },
+      {
+        "iterationCount": 0,
+        "requestExecuted": {
+          "id": "945d085c-4ba2-4603-8469-1002ee74e092",
+          "name": "PUT — обновить пользователя",
+          "url": {
+            "protocol": "https",
+            "path": [
+              "users",
+              "1"
+            ],
+            "host": [
+              "jsonplaceholder",
+              "typicode",
+              "com"
+            ],
+            "query": [],
+            "variable": []
+          },
+          "headers": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "key": "User-Agent",
+              "value": "PostmanRuntime/7.56.2",
+              "system": true
+            },
+            {
+              "key": "Accept",
+              "value": "*/*",
+              "system": true
+            },
+            {
+              "key": "Cache-Control",
+              "value": "no-cache",
+              "system": true
+            },
+            {
+              "key": "Postman-Token",
+              "value": "e3bea9d5-078a-460f-8cb5-796bfdf7a80f",
+              "system": true
+            },
+            {
+              "key": "Host",
+              "value": "jsonplaceholder.typicode.com",
+              "system": true
+            },
+            {
+              "key": "Accept-Encoding",
+              "value": "gzip, deflate, br",
+              "system": true
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive",
+              "system": true
+            },
+            {
+              "key": "Content-Length",
+              "value": "92",
+              "system": true
+            }
+          ],
+          "method": "PUT",
+          "body": {
+            "mode": "raw",
+            "raw": "{\"id\":1,\"name\":\"Updated Student\",\"username\":\"student_updated\",\"email\":\"updated@example.com\"}",
+            "options": {
+              "raw": {
+                "language": "json"
+              }
+            }
+          }
+        },
+        "response": {
+          "id": "675b0302-225d-410c-9635-991393b6c3ba",
+          "_details": {
+            "name": "OK",
+            "detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action.",
+            "code": 200,
+            "standardName": "OK"
+          },
+          "status": "OK",
+          "code": 200,
+          "headers": [
+            {
+              "key": "Date",
+              "value": "Tue, 27 Oct 2026 23:06:58 GMT"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "Transfer-Encoding",
+              "value": "chunked"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "access-control-allow-credentials",
+              "value": "true"
+            },
+            {
+              "key": "Cache-Control",
+              "value": "no-cache"
+            },
+            {
+              "key": "etag",
+              "value": "W/\"6d-qDg7DOYv5L2GCtx39GxihxsOKqk\""
+            },
+            {
+              "key": "expires",
+              "value": "-1"
+            },
+            {
+              "key": "pragma",
+              "value": "no-cache"
+            },
+            {
+              "key": "vary",
+              "value": "Origin, Accept-Encoding"
+            },
+            {
+              "key": "x-content-type-options",
+              "value": "nosniff"
+            },
+            {
+              "key": "x-powered-by",
+              "value": "Express"
+            },
+            {
+              "key": "x-ratelimit-limit",
+              "value": "3600000"
+            },
+            {
+              "key": "x-ratelimit-remaining",
+              "value": "3599994"
+            },
+            {
+              "key": "x-ratelimit-reset",
+              "value": "1793145542"
+            },
+            {
+              "key": "cf-cache-status",
+              "value": "DYNAMIC"
+            },
+            {
+              "key": "Report-To",
+              "value": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=6NVkI7YyizamlYGMecS79C7WGEtqcq7gJYugF5xwg2K%2F8tVcjnjfHeTcfTfyioPwdhyMjju4cx7oTzfqrJsFntqLnqDYTxHdj1sLKatkyiaPsOh2vf5jFfujZ6hNxffGj8DumysruF8AiXIziuTc\"}]}"
+            },
+            {
+              "key": "Nel",
+              "value": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}"
+            },
+            {
+              "key": "Content-Encoding",
+              "value": "br"
+            },
+            {
+              "key": "Server",
+              "value": "cloudflare"
+            },
+            {
+              "key": "CF-RAY",
+              "value": "a5155ab0abbe543a-TLL"
+            },
+            {
+              "key": "alt-svc",
+              "value": "h3=\":443\"; ma=86400"
+            }
+          ],
+          "stream": {
+            "type": "Buffer",
+            "data": [
+              123,
+              10,
+              32,
+              32,
+              34,
+              105,
+              100,
+              34,
+              58,
+              32,
+              49,
+              44,
+              10,
+              32,
+              32,
+              34,
+              110,
+              97,
+              109,
+              101,
+              34,
+              58,
+              32,
+              34,
+              85,
+              112,
+              100,
+              97,
+              116,
+              101,
+              100,
+              32,
+              83,
+              116,
+              117,
+              100,
+              101,
+              110,
+              116,
+              34,
+              44,
+              10,
+              32,
+              32,
+              34,
+              117,
+              115,
+              101,
+              114,
+              110,
+              97,
+              109,
+              101,
+              34,
+              58,
+              32,
+              34,
+              115,
+              116,
+              117,
+              100,
+              101,
+              110,
+              116,
+              95,
+              117,
+              112,
+              100,
+              97,
+              116,
+              101,
+              100,
+              34,
+              44,
+              10,
+              32,
+              32,
+              34,
+              101,
+              109,
+              97,
+              105,
+              108,
+              34,
+              58,
+              32,
+              34,
+              117,
+              112,
+              100,
+              97,
+              116,
+              101,
+              100,
+              64,
+              101,
+              120,
+              97,
+              109,
+              112,
+              108,
+              101,
+              46,
+              99,
+              111,
+              109,
+              34,
+              10,
+              125
+            ]
+          },
+          "cookies": [],
+          "responseTime": 332,
+          "responseSize": 109,
+          "downloadedBytes": 85
+        },
+        "tests": [
+          {
+            "name": "Status 200",
+            "status": "passed"
+          },
+          {
+            "name": "JSON content type",
+            "status": "passed"
+          },
+          {
+            "name": "Updated user structure",
+            "status": "passed"
+          },
+          {
+            "name": "Updated user values",
+            "status": "passed"
+          }
+        ],
+        "errors": []
+      }
+    ],
+    "runError": null
+  }
+}

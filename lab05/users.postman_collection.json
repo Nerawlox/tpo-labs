@@ -1,0 +1,43 @@
+{
+  "info": {
+    "name": "ЛР 5 — REST API пользователей",
+    "description": "GET, POST, PUT на JSONPlaceholder. Запись имитируется; изменения не сохраняются на сервере.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [{"key":"base_url", "value":"https://jsonplaceholder.typicode.com"}],
+  "item": [
+    {
+      "name": "GET — получить пользователя",
+      "request": {"method":"GET", "url":"{{base_url}}/users/1"},
+      "event": [{"listen":"test", "script":{"type":"text/javascript", "exec":[
+        "pm.test('Status 200', () => pm.response.to.have.status(200));",
+        "pm.test('JSON content type', () => pm.expect(pm.response.headers.get('Content-Type')).to.include('application/json'));",
+        "const body = pm.response.json();",
+        "pm.test('User structure', () => { pm.expect(body).to.be.an('object'); pm.expect(body).to.include.all.keys('id','name','username','email','address','company'); pm.expect(body.id).to.be.a('number'); pm.expect(body.name).to.be.a('string'); pm.expect(body.email).to.be.a('string'); pm.expect(body.address).to.be.an('object'); });",
+        "pm.test('User values', () => { pm.expect(body.id).to.eql(1); pm.expect(body.username).to.eql('Bret'); });"
+      ]}}]
+    },
+    {
+      "name": "POST — создать пользователя",
+      "request": {"method":"POST", "url":"{{base_url}}/users", "header":[{"key":"Content-Type","value":"application/json"}], "body":{"mode":"raw","raw":"{\"name\":\"Student Test\",\"username\":\"student_test\",\"email\":\"student@example.com\"}","options":{"raw":{"language":"json"}}}},
+      "event": [{"listen":"test", "script":{"type":"text/javascript", "exec":[
+        "pm.test('Status 201', () => pm.response.to.have.status(201));",
+        "pm.test('JSON content type', () => pm.expect(pm.response.headers.get('Content-Type')).to.include('application/json'));",
+        "const body = pm.response.json();",
+        "pm.test('Created user structure', () => { pm.expect(body).to.be.an('object'); pm.expect(body).to.include.all.keys('id','name','username','email'); pm.expect(body.id).to.be.a('number'); });",
+        "pm.test('Created user values', () => { pm.expect(body.id).to.eql(11); pm.expect(body.name).to.eql('Student Test'); pm.expect(body.username).to.eql('student_test'); pm.expect(body.email).to.eql('student@example.com'); });"
+      ]}}]
+    },
+    {
+      "name": "PUT — обновить пользователя",
+      "request": {"method":"PUT", "url":"{{base_url}}/users/1", "header":[{"key":"Content-Type","value":"application/json"}], "body":{"mode":"raw","raw":"{\"id\":1,\"name\":\"Updated Student\",\"username\":\"student_updated\",\"email\":\"updated@example.com\"}","options":{"raw":{"language":"json"}}}},
+      "event": [{"listen":"test", "script":{"type":"text/javascript", "exec":[
+        "pm.test('Status 200', () => pm.response.to.have.status(200));",
+        "pm.test('JSON content type', () => pm.expect(pm.response.headers.get('Content-Type')).to.include('application/json'));",
+        "const body = pm.response.json();",
+        "pm.test('Updated user structure', () => { pm.expect(body).to.be.an('object'); pm.expect(body).to.include.all.keys('id','name','username','email'); pm.expect(body.id).to.be.a('number'); });",
+        "pm.test('Updated user values', () => pm.expect(body).to.eql({id:1,name:'Updated Student',username:'student_updated',email:'updated@example.com'}));"
+      ]}}]
+    }
+  ]
+}
