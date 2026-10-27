@@ -22,4 +22,4 @@ lab04/test_contact.py::test_whitespace_is_not_a_name PASSED              [100%]
 
 - generated xml file: C:\Users\Neraw\Desktop\7th semester\TPO\lab04\results\junit.xml -
 - Generated html report: file:///C:/Users/Neraw/Desktop/7th%20semester/TPO/lab04/results/test-run.html -
-============================= 12 passed in 40.26s =============================
+============================= 12 passed in 43.52s =============================

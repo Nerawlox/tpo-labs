@@ -1,1 +1,44 @@
-<!DOCTYPE html><html lang="ru"><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Вход • ЛР 3</title><link rel="stylesheet" href="/shared/style.css"><header><strong>Практикум ТПО</strong><span>Лабораторная работа 03 / Selenium</span></header><main style="max-width:680px"><div class="eyebrow">Личный кабинет</div><h1>Вход в систему</h1><p class="intro">Учебный стенд авторизации с серверной проверкой учётных данных.</p><section class="card"><form id="login-form" novalidate><div class="field"><label for="username">Логин</label><input id="username" name="username" autocomplete="username"></div><div class="field"><label for="password">Пароль</label><input id="password" name="password" type="password" autocomplete="current-password"></div><button id="login" type="submit">Войти</button><div id="login-error" class="error" role="alert"></div></form><div id="dashboard" hidden><span class="badge">Авторизация подтверждена</span><h2>Добро пожаловать, student!</h2><p>Вы вошли в личный кабинет.</p><button id="logout">Logout</button></div></section><footer>Тестовая учётная запись: student / Study123! · Только для локального стенда.</footer></main><script src="app.js"></script></html>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Вход</title>
+  <link rel="stylesheet" href="/shared/style.css">
+</head>
+<body class="login-page">
+<header class="site-header">
+  <div class="header-content">
+    <a class="home-link" href="/">ТПО</a>
+    <nav aria-label="Приложения">
+      <a href="/lab01/app/">Калькулятор</a>
+      <a href="/lab02/app/">Задачи</a>
+      <a href="/lab03/app/" aria-current="page">Вход</a>
+      <a href="/lab04/app/">Форма</a>
+    </nav>
+  </div>
+</header>
+<main>
+  <h1>Вход</h1>
+  <form id="login-form" novalidate>
+    <div class="field">
+      <label for="username">Логин</label>
+      <input id="username" name="username" autocomplete="username">
+    </div>
+    <div class="field">
+      <label for="password">Пароль</label>
+      <input id="password" name="password" type="password" autocomplete="current-password">
+    </div>
+    <button id="login" type="submit">Войти</button>
+    <div id="login-error" class="error" role="alert"></div>
+  </form>
+  <div id="dashboard" hidden>
+    <h2>Добро пожаловать, student!</h2>
+    <p>Вы вошли в личный кабинет.</p>
+    <button id="logout">Выйти</button>
+  </div>
+  <p class="test-account">Для проверки: <code>student</code> / <code>Study123!</code></p>
+</main>
+<script src="app.js"></script>
+</body>
+</html>

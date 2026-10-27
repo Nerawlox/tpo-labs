@@ -4,7 +4,9 @@
 
 | Работа | Файл | Размер |
 |---|---|---|
-| 1. Калькулятор и тест-дизайн | [interactive_division_by_zero.jpg](lab01/screenshots/interactive_division_by_zero.jpg) | 1265 × 712 |
+| 1. Калькулятор и тест-дизайн | [00_applications.png](lab01/screenshots/00_applications.png) | 1418 × 926 |
+| 1. Калькулятор и тест-дизайн | [11_mobile_calculator.png](lab01/screenshots/11_mobile_calculator.png) | 500 × 746 |
+| 1. Калькулятор и тест-дизайн | [interactive_division_by_zero.jpg](lab01/screenshots/interactive_division_by_zero.jpg) | 1280 × 720 |
 | 1. Калькулятор и тест-дизайн | [tc01.png](lab01/screenshots/tc01.png) | 1418 × 926 |
 | 1. Калькулятор и тест-дизайн | [tc02.png](lab01/screenshots/tc02.png) | 1418 × 926 |
 | 1. Калькулятор и тест-дизайн | [tc03.png](lab01/screenshots/tc03.png) | 1418 × 926 |
@@ -22,18 +24,21 @@
 | 2. Список задач и дефекты | [05_active_filter.png](lab02/screenshots/05_active_filter.png) | 1418 × 926 |
 | 2. Список задач и дефекты | [06_persistence.png](lab02/screenshots/06_persistence.png) | 1418 × 926 |
 | 2. Список задач и дефекты | [07_delete_wrong_task_bug.png](lab02/screenshots/07_delete_wrong_task_bug.png) | 1418 × 926 |
-| 2. Список задач и дефекты | [interactive_blank_task_bug.jpg](lab02/screenshots/interactive_blank_task_bug.jpg) | 1265 × 712 |
+| 2. Список задач и дефекты | [08_mobile_tasks.png](lab02/screenshots/08_mobile_tasks.png) | 500 × 746 |
+| 2. Список задач и дефекты | [interactive_blank_task_bug.jpg](lab02/screenshots/interactive_blank_task_bug.jpg) | 1280 × 720 |
 | 3. Авторизация Selenium | [01_login_page.png](lab03/screenshots/01_login_page.png) | 1418 × 926 |
 | 3. Авторизация Selenium | [02_credentials.png](lab03/screenshots/02_credentials.png) | 1418 × 926 |
 | 3. Авторизация Selenium | [03_successful_login.png](lab03/screenshots/03_successful_login.png) | 1418 × 926 |
 | 3. Авторизация Selenium | [04_logout.png](lab03/screenshots/04_logout.png) | 1418 × 926 |
 | 3. Авторизация Selenium | [05_invalid_login.png](lab03/screenshots/05_invalid_login.png) | 1418 × 926 |
+| 3. Авторизация Selenium | [06_mobile_login.png](lab03/screenshots/06_mobile_login.png) | 500 × 746 |
 | 3. Авторизация Selenium | [90_pytest_results.png](lab03/screenshots/90_pytest_results.png) | 1418 × 926 |
 | 4. Форма и Page Object | [01_success.png](lab04/screenshots/01_success.png) | 1418 × 926 |
 | 4. Форма и Page Object | [02_invalid_email.png](lab04/screenshots/02_invalid_email.png) | 1418 × 926 |
 | 4. Форма и Page Object | [03_whitespace_name.png](lab04/screenshots/03_whitespace_name.png) | 1418 × 926 |
+| 4. Форма и Page Object | [04_mobile_form.png](lab04/screenshots/04_mobile_form.png) | 500 × 746 |
 | 4. Форма и Page Object | [90_pytest_results.png](lab04/screenshots/90_pytest_results.png) | 1418 × 926 |
-| 4. Форма и Page Object | [interactive_required_email.jpg](lab04/screenshots/interactive_required_email.jpg) | 1265 × 712 |
+| 4. Форма и Page Object | [interactive_required_email.jpg](lab04/screenshots/interactive_required_email.jpg) | 1280 × 720 |
 | 4. Форма и Page Object | [matrix_000.png](lab04/screenshots/matrix_000.png) | 1418 × 926 |
 | 4. Форма и Page Object | [matrix_001.png](lab04/screenshots/matrix_001.png) | 1418 × 926 |
 | 4. Форма и Page Object | [matrix_010.png](lab04/screenshots/matrix_010.png) | 1418 × 926 |
@@ -65,4 +70,4 @@
 | 9. GitHub Actions | [02_readme.jpg](lab09/screenshots/02_readme.jpg) | 1265 × 712 |
 | 9. GitHub Actions | [03_final_actions_success.jpg](lab09/screenshots/03_final_actions_success.jpg) | 1265 × 712 |
 
-Всего изображений: 60.
+Всего изображений: 65.

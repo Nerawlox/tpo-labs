@@ -1,1 +1,44 @@
-<!DOCTYPE html><html lang="ru"><meta charset="UTF-8"><title>Практикум ТПО</title><link rel="stylesheet" href="/shared/style.css"><header><strong>Практикум ТПО</strong><span>Локальные учебные приложения</span></header><main><div class="eyebrow">Тестирование программного обеспечения</div><h1>Лабораторные стенды</h1><p class="intro">Приложения и материалы практической части.</p><section class="card"><p><a href="/lab01/app/">01 · Калькулятор</a></p><p><a href="/lab02/app/">02 · Список задач</a></p><p><a href="/lab03/app/">03 · Авторизация</a></p><p><a href="/lab04/app/">04 · Обратная связь</a></p><p><a href="/api/health">08 · API для нагрузки</a></p></section></main></html>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Лабораторные ТПО</title>
+  <link rel="stylesheet" href="/shared/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="header-content">
+    <a class="home-link" href="/">ТПО</a>
+    <nav aria-label="Приложения">
+      <a href="/lab01/app/">Калькулятор</a>
+      <a href="/lab02/app/">Задачи</a>
+      <a href="/lab03/app/">Вход</a>
+      <a href="/lab04/app/">Форма</a>
+    </nav>
+  </div>
+</header>
+<main>
+  <h1>Лабораторные работы</h1>
+  <p class="description">Приложения для тестирования.</p>
+  <table class="work-list">
+    <thead><tr><th scope="col">№</th><th scope="col">Приложение</th><th scope="col">Проверки</th></tr></thead>
+    <tbody>
+      <tr><td>1</td><td><a href="/lab01/app/">Калькулятор</a></td><td>Вычисления, ошибки ввода, очистка</td></tr>
+      <tr><td>2</td><td><a href="/lab02/app/">Список задач</a></td><td>Добавление, удаление и фильтры</td></tr>
+      <tr><td>3</td><td><a href="/lab03/app/">Вход</a></td><td>Авторизация и выход</td></tr>
+      <tr><td>4</td><td><a href="/lab04/app/">Обратная связь</a></td><td>Обязательные поля и формат email</td></tr>
+      <tr><td>8</td><td><a href="/api/health">API</a></td><td>GET-запросы для k6</td></tr>
+    </tbody>
+  </table>
+  <h2>Результаты запусков</h2>
+  <ul class="run-links">
+    <li><a href="/lab03/results/test-run.html">Selenium: вход</a></li>
+    <li><a href="/lab04/results/test-run.html">Selenium: форма</a></li>
+    <li><a href="/lab05/results/postman-run.html">Коллекция Postman</a></li>
+    <li><a href="/lab06/results/test-run.html">Модульные тесты</a></li>
+  </ul>
+</main>
+
+</body>
+</html>

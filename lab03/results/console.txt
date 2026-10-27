@@ -12,4 +12,4 @@ lab03/test_login.py::test_invalid_login PASSED                           [100%]
 
 - generated xml file: C:\Users\Neraw\Desktop\7th semester\TPO\lab03\results\junit.xml -
 - Generated html report: file:///C:/Users/Neraw/Desktop/7th%20semester/TPO/lab03/results/test-run.html -
-============================== 2 passed in 7.33s ==============================
+============================== 2 passed in 8.12s ==============================

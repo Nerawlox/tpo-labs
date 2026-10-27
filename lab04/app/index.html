@@ -1,1 +1,49 @@
-<!DOCTYPE html><html lang="ru"><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Обратная связь • ЛР 4</title><link rel="stylesheet" href="/shared/style.css"><header><strong>Практикум ТПО</strong><span>Лабораторная работа 04 / Page Object</span></header><main style="max-width:760px"><div class="eyebrow">Остаёмся на связи</div><h1>Обратная связь</h1><p class="intro">Все три поля обязательны. Проверка выполняется на сервере учебного стенда.</p><section class="card"><form id="contact-form" novalidate><div class="grid"><div class="field"><label for="name">Имя</label><input id="name" name="name" autocomplete="name"><div id="name-error" class="error" role="alert"></div></div><div class="field"><label for="email">Email</label><input id="email" name="email" autocomplete="email"><div id="email-error" class="error" role="alert"></div></div></div><label for="message">Сообщение</label><textarea id="message" name="message"></textarea><div id="message-error" class="error" role="alert"></div><div class="actions"><button id="send" type="submit">Отправить сообщение</button></div></form><div id="success" class="result" role="status" hidden></div></section><footer>Локальная демонстрация приёма формы. Письма на email не отправляются.</footer></main><script src="app.js"></script></html>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Обратная связь</title>
+  <link rel="stylesheet" href="/shared/style.css">
+</head>
+<body class="contact-page">
+<header class="site-header">
+  <div class="header-content">
+    <a class="home-link" href="/">ТПО</a>
+    <nav aria-label="Приложения">
+      <a href="/lab01/app/">Калькулятор</a>
+      <a href="/lab02/app/">Задачи</a>
+      <a href="/lab03/app/">Вход</a>
+      <a href="/lab04/app/" aria-current="page">Форма</a>
+    </nav>
+  </div>
+</header>
+<main>
+  <h1>Обратная связь</h1>
+  <p class="description">Все поля обязательны.</p>
+  <form id="contact-form" novalidate>
+    <div class="grid">
+      <div class="field">
+        <label for="name">Имя</label>
+        <input id="name" name="name" autocomplete="name">
+        <div id="name-error" class="error" role="alert"></div>
+      </div>
+      <div class="field">
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" autocomplete="email">
+        <div id="email-error" class="error" role="alert"></div>
+      </div>
+    </div>
+    <label for="message">Сообщение</label>
+    <textarea id="message" name="message"></textarea>
+    <div id="message-error" class="error" role="alert"></div>
+    <div class="actions">
+      <button id="send" type="submit">Отправить сообщение</button>
+    </div>
+  </form>
+  <div id="success" class="result" role="status" hidden></div>
+  <footer>Форма проверяет введённые данные. Письма не отправляются.</footer>
+</main>
+<script src="app.js"></script>
+</body>
+</html>

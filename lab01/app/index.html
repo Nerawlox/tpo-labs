@@ -1,8 +1,53 @@
-<!DOCTYPE html><html lang="ru"><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Калькулятор • ЛР 1</title><link rel="stylesheet" href="/shared/style.css">
-<header><strong>Практикум ТПО</strong><span>Лабораторная работа 01 / Тест-дизайн</span></header>
-<main><div class="eyebrow">Арифметика без лишнего</div><h1>Калькулятор</h1><p class="intro">Четыре операции, дробные и отрицательные числа. Результат с точностью до 12 значащих цифр.</p>
-<section class="card"><form id="calculator" novalidate><div class="grid"><div class="field"><label for="first">Первое число</label><input id="first" name="first" inputmode="decimal" placeholder="Например, 12,5"></div><div class="field"><label for="second">Второе число</label><input id="second" name="second" inputmode="decimal" placeholder="Например, −3"></div></div>
-<label for="operation">Операция</label><select id="operation" name="operation"><option value="add">Сложение (+)</option><option value="subtract">Вычитание (−)</option><option value="multiply">Умножение (×)</option><option value="divide">Деление (÷)</option></select>
-<div class="actions"><button id="calculate" type="submit">Вычислить</button><button id="clear" class="secondary" type="button">Очистить</button></div></form>
-<div id="output" class="result" aria-live="polite"><span class="hint">Результат появится после вычисления</span></div>
-<p class="hint">Десятичный разделитель: точка или запятая. Пустые поля и нечисловой ввод вызывают ошибку.</p></section><footer>Стенд для проверки арифметики, валидации ввода и граничных значений.</footer></main><script src="app.js"></script></html>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Калькулятор</title>
+  <link rel="stylesheet" href="/shared/style.css">
+</head>
+<body class="calculator-page">
+<header class="site-header">
+  <div class="header-content">
+    <a class="home-link" href="/">ТПО</a>
+    <nav aria-label="Приложения">
+      <a href="/lab01/app/" aria-current="page">Калькулятор</a>
+      <a href="/lab02/app/">Задачи</a>
+      <a href="/lab03/app/">Вход</a>
+      <a href="/lab04/app/">Форма</a>
+    </nav>
+  </div>
+</header>
+<main>
+  <h1>Калькулятор</h1>
+  <form id="calculator" novalidate>
+    <div class="calculation">
+      <div class="field">
+        <label for="first">Первое число</label>
+        <input id="first" name="first" inputmode="decimal" placeholder="12,5">
+      </div>
+      <div class="field">
+        <label for="operation">Операция</label>
+        <select id="operation" name="operation">
+          <option value="add">Сложение (+)</option>
+          <option value="subtract">Вычитание (-)</option>
+          <option value="multiply">Умножение (×)</option>
+          <option value="divide">Деление (÷)</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="second">Второе число</label>
+        <input id="second" name="second" inputmode="decimal" placeholder="-3">
+      </div>
+    </div>
+    <div class="actions">
+      <button id="calculate" type="submit">Вычислить</button>
+      <button id="clear" class="secondary" type="button">Очистить</button>
+    </div>
+  </form>
+  <div id="output" class="result" aria-live="polite">Результат появится после вычисления</div>
+  <p class="hint">Дробные числа можно вводить с точкой или запятой. Результат округляется до 12 значащих цифр.</p>
+</main>
+<script src="app.js"></script>
+</body>
+</html>

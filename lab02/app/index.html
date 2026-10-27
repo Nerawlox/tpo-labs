@@ -1,5 +1,44 @@
-<!DOCTYPE html><html lang="ru"><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Список задач • ЛР 2</title><link rel="stylesheet" href="/shared/style.css">
-<header><strong>Практикум ТПО</strong><span>Лабораторная работа 02 / Тестирование UI</span></header><main><div class="eyebrow">План на день</div><h1>Список задач</h1><p class="intro">Добавляйте задачи, отмечайте выполненные и переключайте фильтры.</p><section class="card">
-<form id="todo-form"><label for="new-task">Новая задача</label><div style="display:flex;gap:12px"><input id="new-task" placeholder="Что нужно сделать?"><button id="add-task">Добавить</button></div></form>
-<div class="filters"><button data-filter="all">Все</button><button data-filter="active" class="secondary">Активные</button><button data-filter="done" class="secondary">Выполненные</button></div><div id="tasks" aria-live="polite"></div><p id="counter" class="hint"></p><button id="reset" class="secondary">Сбросить список</button>
-</section><footer>Учебная версия 1.0 · Данные сохраняются в текущем браузере.</footer></main><script src="app.js"></script></html>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Список задач</title>
+  <link rel="stylesheet" href="/shared/style.css">
+</head>
+<body class="todo-page">
+<header class="site-header">
+  <div class="header-content">
+    <a class="home-link" href="/">ТПО</a>
+    <nav aria-label="Приложения">
+      <a href="/lab01/app/">Калькулятор</a>
+      <a href="/lab02/app/" aria-current="page">Задачи</a>
+      <a href="/lab03/app/">Вход</a>
+      <a href="/lab04/app/">Форма</a>
+    </nav>
+  </div>
+</header>
+<main>
+  <h1>Список задач</h1>
+  <form id="todo-form">
+    <label for="new-task">Новая задача</label>
+    <div class="task-entry">
+      <input id="new-task" placeholder="Название задачи">
+      <button id="add-task" type="submit">Добавить</button>
+    </div>
+  </form>
+  <div class="filters" aria-label="Фильтры задач">
+    <button data-filter="all">Все</button>
+    <button data-filter="active" class="secondary">Активные</button>
+    <button data-filter="done" class="secondary">Выполненные</button>
+  </div>
+  <div id="tasks" aria-live="polite"></div>
+  <div class="list-footer">
+    <p id="counter" class="hint"></p>
+    <button id="reset" class="secondary">Сбросить список</button>
+  </div>
+  <footer>Список сохраняется в этом браузере.</footer>
+</main>
+<script src="app.js"></script>
+</body>
+</html>
