@@ -14,7 +14,7 @@ APK: artifacts/study-notes.apk. Исходник: src/org/study/notes/MainActivi
 .\lab07\start_emulator.ps1
 ```
 
-Дождаться устройства: `.tools\android-sdk\platform-tools\adb.exe -s emulator-5554 shell getprop sys.boot_completed` должно вывести 1. Эмулятор запускается без отдельного окна; изображения снимаются с его экрана.
+Дождаться устройства: `.tools\android-sdk\platform-tools\adb.exe -s emulator-5554 shell getprop sys.boot_completed` должно вывести 1. По умолчанию эмулятор запускается без окна. Для показа на защите: `.\lab07\start_emulator.ps1 -Visible`.
 
 В другом терминале запустить `.\lab07\start_appium.ps1`, затем `.venv\Scripts\python.exe lab07\appium_test.py`. Скрипт создаёт новую тестовую сессию приложения и сохраняет фактические результаты и скриншоты.
 
